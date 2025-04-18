@@ -16,15 +16,33 @@
         <div class="flex-shrink-0 flex items-center">
           <span class="font-bold text-xl text-blue-600">Relocation Navigator</span>
         </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+        <!-- Desktop menu -->
         <div class="hidden md:block">
           <div class="ml-10 flex items-center space-x-4">
-            <a href="#how-it-works" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Как это работает</a>
-            <a href="#why-us" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Почему мы</a>
-            <a href="#who-we-help" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Кому помогаем</a>
-            <a href="#testimonials" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Отзывы</a>
+            <a href="chat.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Чат</a>
+            <a href="pricing.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Цены</a>
+            <a href="contacts.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Контакты</a>
             <a href="#form" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">Получить консультацию</a>
           </div>
         </div>
+      </div>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="chat.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Чат</a>
+        <a href="pricing.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Цены</a>
+        <a href="contacts.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Контакты</a>
+        <a href="#form" class="block px-3 py-2 rounded-md text-base font-medium bg-blue-600 text-white hover:bg-blue-700">Получить консультацию</a>
       </div>
     </div>
   </nav>
@@ -240,24 +258,6 @@
     </div>
   </footer>
 
-  <script>
-    // Simple form submission handling
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Спасибо за заполнение формы! Мы свяжемся с вами в ближайшее время.');
-      this.reset();
-    });
-
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
