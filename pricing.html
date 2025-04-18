@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Title - Relocation Navigator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-sans">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="font-bold text-xl text-blue-600">Relocation Navigator</a>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-center space-x-4">
+            <a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Главная</a>
+            <a href="pricing.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Цены</a>
+            <a href="contacts.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Контакты</a>
+            <a href="chat.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Чат</a>
+            <a href="#form" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">Получить консультацию</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="pt-20 pb-10">
+    <!-- Your page content here -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+          <h1 class="text-3xl sm:text-4xl font-semibold mb-16 text-center">Наши услуги и цены</h1>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Basic Plan -->
+            <div class="border border-gray-200 rounded-xl p-6 flex flex-col hover-card">
+              <h3 class="text-xl font-semibold mb-2">Консультация</h3>
+              <div class="text-3xl font-bold mb-4">€150</div>
+              <p class="text-gray-600 mb-6">Разовая консультация для понимания вашей ситуации и возможных решений.</p>
+              <ul class="space-y-2 mb-8 flex-grow">
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  60-минутная онлайн встреча
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Анализ вашей ситуации
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Рекомендации по дальнейшим шагам
+                </li>
+              </ul>
+              <a href="#form" class="mt-auto text-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-xl font-medium transition">Выбрать</a>
+            </div>
+            
+            <!-- Pro Plan -->
+            <div class="border-2 border-blue-500 rounded-xl p-6 flex flex-col relative hover-card bg-white shadow-md">
+              <div class="absolute top-0 right-0 bg-blue-500 text-white px-4 py-1 rounded-bl-xl font-medium">Популярный</div>
+              <h3 class="text-xl font-semibold mb-2">Навигация</h3>
+              <div class="text-3xl font-bold mb-4">€450</div>
+              <p class="text-gray-600 mb-6">Полное сопровождение и подбор оптимального решения для вашей ситуации.</p>
+              <ul class="space-y-2 mb-8 flex-grow">
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  3 онлайн встречи с экспертом
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Детальный план действий
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Подбор проверенных специалистов
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Поддержка в течение 1 месяца
+                </li>
+              </ul>
+              <a href="#form" class="mt-auto text-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium transition">Выбрать</a>
+            </div>
+            
+            <!-- Enterprise Plan -->
+            <div class="border border-gray-200 rounded-xl p-6 flex flex-col hover-card">
+              <h3 class="text-xl font-semibold mb-2">Полное сопровождение</h3>
+              <div class="text-3xl font-bold mb-4">€990</div>
+              <p class="text-gray-600 mb-6">Комплексное решение "под ключ" для всего процесса релокации.</p>
+              <ul class="space-y-2 mb-8 flex-grow">
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Неограниченные консультации
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Личный менеджер
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Помощь с документами
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Поддержка 3 месяца
+                </li>
+                <li class="flex items-start">
+                  <svg class="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Приоритетный доступ
+                </li>
+              </ul>
+              <a href="#form" class="mt-auto text-center px-6 py-3 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-xl font-medium transition">Выбрать</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-10 bg-gray-800 text-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <div class="font-bold text-xl mb-2">Relocation Navigator</div>
+          <p class="text-gray-400 text-sm">© 2025 Relocation Navigator. Все права защищены.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+          <a href="#" class="hover:text-blue-300">О нас</a>
+          <a href="#" class="hover:text-blue-300">Блог</a>
+          <a href="contacts.html" class="hover:text-blue-300">Контакты</a>
+          <a href="#" class="hover:text-blue-300">Политика конфиденциальности</a>
+        </div>
+      </div>
+      <div class="mt-8 text-sm text-gray-400 text-center">
+        Мы не юридическая компания. Все рекомендации носят информационный характер.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

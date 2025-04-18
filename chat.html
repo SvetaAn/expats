@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Title - Relocation Navigator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-sans">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="font-bold text-xl text-blue-600">Relocation Navigator</a>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-center space-x-4">
+            <a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Главная</a>
+            <a href="pricing.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Цены</a>
+            <a href="contacts.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Контакты</a>
+            <a href="chat.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Чат</a>
+            <a href="#form" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition">Получить консультацию</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="pt-20 pb-10">
+    <!-- Your page content here -->
+    <section class="py-20 px-6">
+        <div class="max-w-3xl mx-auto">
+          <h1 class="text-3xl sm:text-4xl font-semibold mb-16 text-center">Чат с нашими консультантами</h1>
+          
+          <div class="rounded-xl overflow-hidden shadow-lg">
+            <!-- Telegram Widget -->
+            <script async src="https://telegram.org/js/telegram-widget.js?22" 
+              data-telegram-discussion="RelocationNavigatorChannel/1" 
+              data-comments-limit="5"
+              data-colorful="1"
+              data-color="2481cc"
+              data-height="500"></script>
+            
+            <!-- Replace "RelocationNavigatorChannel/1" with your actual channel/post -->
+          </div>
+          
+          <div class="mt-8 bg-blue-50 p-6 rounded-xl">
+            <h3 class="font-semibold text-lg mb-2">Не хотите ждать?</h3>
+            <p class="mb-4">Напишите нам напрямую в Telegram и получите быстрый ответ от консультанта.</p>
+            <a href="https://t.me/RelocationNavigator" target="_blank" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition">
+              Написать в Telegram
+            </a>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-10 bg-gray-800 text-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <div class="font-bold text-xl mb-2">Relocation Navigator</div>
+          <p class="text-gray-400 text-sm">© 2025 Relocation Navigator. Все права защищены.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+          <a href="#" class="hover:text-blue-300">О нас</a>
+          <a href="#" class="hover:text-blue-300">Блог</a>
+          <a href="contacts.html" class="hover:text-blue-300">Контакты</a>
+          <a href="#" class="hover:text-blue-300">Политика конфиденциальности</a>
+        </div>
+      </div>
+      <div class="mt-8 text-sm text-gray-400 text-center">
+        Мы не юридическая компания. Все рекомендации носят информационный характер.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
