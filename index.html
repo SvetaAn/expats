@@ -17,8 +17,12 @@
   <!-- Hero Section -->
   <section class="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-50 to-white px-4 pt-16">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
-      <div class="max-w-3xl md:text-left space-y-8 md:w-1/3">
-        <div class="space-y-2">  <!-- New wrapper div with tighter spacing -->
+      <!-- Image div moved up in mobile, reordered in md breakpoint -->
+      <div class="md:w-2/3 items-center md:order-2">
+        <img src="assets/images/hero-image.webp" alt="Relocation Navigator" class="rounded-xl w-full">
+      </div>
+      <div class="max-w-3xl md:text-left space-y-8 md:w-1/3 md:order-1">
+        <div class="space-y-2">
           <h1 class="text-4xl sm:text-5xl font-semibold leading-tight text-slate-800">
             Легализуйся без стресса
           </h1>
@@ -33,9 +37,6 @@
         <a href="#form" class="inline-block px-8 py-4 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition shadow-lg">
           Пройти короткий опрос
         </a>
-      </div>
-      <div class="md:w-2/3 items-center">
-        <img src="assets/images/hero-image.webp" alt="Relocation Navigator" class="rounded-xl w-full">
       </div>
     </div>
   </section>
